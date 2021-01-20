@@ -9,7 +9,7 @@
           color: red;
         }
       </style> -->
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -28,30 +28,35 @@
     <h2>Application Form</h2>
     <div class="row">
       <label>Full Name</label>
+      <br>
       <input type="text" name="name" required autofocus autocomplete="on">
       <div class="error" id="nameErr"></div>
     </div>
-
+    <br>
     <div class="row">
       <label>Email Address</label>
+      <br>
       <input type="text" name="email" min="7" required autocomplet="on">
       <div class="error" id="emailErr"></div>
     </div>
-
+    <br>
     <div class="row">
       <label>Mobile Number</label>
+      <br>
       <input type="text" name="mobile" required autocomplet="on" placeholder="303-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
       <div class="error" id="mobileErr"></div>
     </div>
-
+    <br>
     <div class="row">
       <label>Password</label>
+      <br>
       <input type="password" name="password" required autocomplet="on" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
       <div class="error" id="mobileErr"></div>
     </div>
-
+    <br>
     <div class="row">
       <label>Country</label>
+      <br>
       <select name="country">
         <option>Select</option>
         <option>Canada</option>
@@ -59,8 +64,10 @@
         <option>United States</option>
         <option>Greenland</option>
       </select>
+      <br>
       <div class="error" id="countryErr"></div>
     </div>
+    <br>
     <div class="row">
       <label>Gender</label>
       <div class="form-inline">
@@ -69,6 +76,7 @@
       </div>
       <div class="error" id="genderErr"></div>
     </div>
+    <br>
     <div class="row">
       <label>Hobbies <i>(Optional)</i></label>
       <div class="form-inline">
@@ -77,6 +85,7 @@
         <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>
       </div>
     </div>
+    <br>
     <div class="row">
       <input type="submit" value="Submit">
     </div>
