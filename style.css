@@ -1,0 +1,16 @@
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
+input:required {
+    background-color: grey;
+}
+
+input:checked {
+    color: black;
+}
+
