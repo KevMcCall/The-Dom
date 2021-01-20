@@ -40,13 +40,13 @@
 
     <div class="row">
       <label>Mobile Number</label>
-      <input type="text" name="mobile" required autocomplet="on" placeholder="303-45-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      <input type="text" name="mobile" required autocomplet="on" placeholder="303-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
       <div class="error" id="mobileErr"></div>
     </div>
 
     <div class="row">
       <label>Password</label>
-      <input type="password" name="password" required autocomplet="on">
+      <input type="password" name="password" required autocomplet="on" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
       <div class="error" id="mobileErr"></div>
     </div>
 
