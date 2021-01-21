@@ -10,11 +10,15 @@ input:required {
     border: 1px solid red;
 }
 
-input[type='radio']:checked:after {
+input[type="radio"]:checked:after {
     color: green;
 }
 
 form {
     text-align: center;
     background-color: aquamarine;
+    height: 550px;
+    width: 500px;
+    margin-left: 550px;
+    border: 1px solid black;
 }
