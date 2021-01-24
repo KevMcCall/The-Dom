@@ -61,10 +61,69 @@ if(email == " ") {
     }
 
 // Validate the Mobile Number //
-
+if(mobile == " ") {
+    printError('mobileErr', 'Please enter a valid Phone Number')
+} 
+    else {
+        var regex= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if(regex.test(mobile) === false) {
+            printError('mobileErr', 'Please enter a valid 10-Digit Phone Number');
+        } else {
+            printError('mobileErr', " ")
+            mobileErr = false;
+        }
+    }
 
 // Validate Country //
+if(country == "select") {
+    printError('mobileErr', 'Please choose a country')
+} 
+    else {
+        var regex= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if(regex.test(mobile) === false) {
+            printError('mobileErr', 'Please enter a valid 10-Digit Phone Number');
+        } else {
+            printError('mobileErr', " ")
+            mobileErr = false;
+        }
+    }
 
 // Validate Gender //
+if(country == "select") {
+    printError('mobileErr', 'Please choose a country')
+} 
+    else {
+        var regex= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if(regex.test(mobile) === false) {
+            printError('mobileErr', 'Please enter a valid 10-Digit Phone Number');
+        } else {
+            printError('mobileErr', " ")
+            mobileErr = false;
+        }
+    }
+
 
 // Validate Hobbies //
+
+// Prevent the form from being submitted if there are any errors //
+
+if((nameErr || emailErr || mobileErr || countryErr || genderErr) == true) {
+    return false;
+
+} else {
+    // Creating a string from input data for preview //
+    var dataPreview = "You've entered the following details: \n" +
+                        "Full Name: " + name + "\n" +
+                        "Email Address: " + email + "\n" +
+                        "Mobile Number: " + mobile + "\n" +
+                        "Country: " + country + "\n" +
+                        "Gender: " + gender + "\n";
+
+    if(hobbies.length) {
+        dataPreview += "Hobbies: " + hobbies.join(", ");
+    }
+// Display input data in a dialog box before submitting the form
+alert(dataPreview);
+
+
+}
