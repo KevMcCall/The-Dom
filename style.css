@@ -1,3 +1,4 @@
+/* Pseudo Classes For Form Validation */
 input:invalid {
     border: 2px solid red;
 }
@@ -7,13 +8,11 @@ input:valid {
 }
 
 input:required {
-    border: 1px solid red;
+    border: 1px solid black;
 }
 
-input[type="radio"]:checked:after {
-    color: green;
-}
 
+/* Form Styling */
 form {
     text-align: center;
     background-color: aquamarine;
