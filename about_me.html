@@ -14,7 +14,7 @@
 
 <body>
   <!-- Form -->
-  <form name="contactwForm" onsubmit="return validateForm()" action="" method="get">
+  <form id="form" name="contactForm" onsubmit="return validateForm()" action="" method="get">
     <h2>Application Form</h2>
     <!-- Name Input -->
     <div class="row">
@@ -36,7 +36,7 @@
     <div class="row">
       <label>Mobile Number</label>
       <br>
-      <input type="text" name="mobile" required autocomplet="on" placeholder="303-456-6789"
+      <input class="mobile" type="text" name="mobile" required autocomplet="on" placeholder="303-456-6789"
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter your mobile number in the correct format with dashes.">
       <div class="error" id="mobileErr"></div>
     </div>

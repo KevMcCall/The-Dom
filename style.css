@@ -1,16 +1,25 @@
 /* Pseudo Classes For Form Validation */
-input:invalid {
+input:invalid:required {
     border: 2px solid red;
 }
 
 input:valid {
-    border: 2px solid black;
+    border: 2px solid #000000;
 }
 
 input:required {
-    border: 1px solid black;
+    border: 2px solid ;
 }
 
+/* Checkbox When Checked */
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px gold;
+}
+
+/* Radio When Checked */
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px gold;
+  }
 
 /* Form Style */
 form {
@@ -26,4 +35,9 @@ form {
 /* HTML Style */
 html {
     background-color: #8B939C;
+}
+
+/* Center Mobile Number */
+.mobile {
+    text-align: center;
 }
