@@ -20,7 +20,7 @@
     <div class="row">
       <label>Full Name</label>
       <br>
-      <input type="text" name="name" required autofocus autocomplete="on">
+      <input type="text" name="name" required autofocus autocomplete="on" title="Please enter your first and last name.">
       <div class="error" id="nameErr"></div>
     </div>
     <br>
@@ -28,7 +28,7 @@
     <div class="row">
       <label>Email Address</label>
       <br>
-      <input type="text" name="email" required autocomplet="on">
+      <input type="text" name="email" required autocomplet="on" title="Please enter a valid email address.">
       <div class="error" id="emailErr"></div>
     </div>
     <br>
@@ -37,7 +37,7 @@
       <label>Mobile Number</label>
       <br>
       <input type="text" name="mobile" required autocomplet="on" placeholder="303-456-6789"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter your mobile number in the correct format with dashes.">
       <div class="error" id="mobileErr"></div>
     </div>
     <br>
@@ -45,8 +45,9 @@
     <div class="row">
       <label>Password</label>
       <br>
-      <input type="password" name="password" required autocomplet="on"
-        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+      <input type="password" name="password" required
+        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+        title="Must contain at least one lower case, one uppercase, one number/special character, and at least 8 characters.">
       <div class="error" id="mobileErr"></div>
     </div>
     <br>

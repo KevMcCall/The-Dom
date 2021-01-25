@@ -12,12 +12,18 @@ input:required {
 }
 
 
-/* Form Styling */
+/* Form Style */
 form {
     text-align: center;
-    background-color: aquamarine;
+    background-color: black;
     height: 550px;
     width: 500px;
     margin-left: 550px;
-    border: 1px solid black;
+    border: 3px solid red;
+    color: #ffffff;
+}
+
+/* HTML Style */
+html {
+    background-color: #8B939C;
 }
